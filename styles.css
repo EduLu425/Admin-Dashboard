@@ -129,6 +129,19 @@ input {
     padding-right: 5px;
 }
 
+ul li {
+    padding: 10px;
+    position: relative;
+}
+
+li img {
+    position: absolute;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(102%) contrast(102%);
+    left: -35px;
+    top: 6px;
+    width: 24px;
+    
+}
 
 
 
