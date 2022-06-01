@@ -8,7 +8,11 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="sidebar"><h1>Dashboard</h1>
+    <div class="sidebar">
+        <div id="logo-container">
+            <img src="./images/logo.svg" viewbox="0 0 100 100">
+            <h1>Dashboard</h1>
+        </div>
         <nav>
             <ul id="links" class="nav-links">
                 <li><img src="./images/home.svg" viewbox="0 0 100 100"><a href="url">Home</a></li>
@@ -34,11 +38,25 @@
                 <input type="search">
             </div>
             <div id="user-container">
+                <img src="./images/notification.svg" viewport="0 0 100 100">
+                <img src="./images/avatar1.jpg">
                 <h4>Brongulus Bajooker</h4>
-
             </div>
         </div>
-        <div id="bottom-header-container"></div>
+        <div id="bottom-header-container">
+            <div id="greeting-container">
+                <img src="./images/avatar1.jpg">
+                <div>
+                    <span>Hi there,</span><br>
+                    Brongulus Bajooker (@brongulus)
+                </div>
+            </div>
+            <div id="button-container">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
     </div>
     <div class="content">
         <div class="projects-container">
