@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 * {
     list-style: none;
@@ -53,6 +53,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 5px 25px 5px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 5px 5px #2dd4bf;
 }
 
 #user-container {
@@ -119,6 +122,7 @@ body {
     font-size: 20px;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 5px 5px 5px #2dd4bf;
 }
 .project-card h5 {
     font-weight: bold;
@@ -130,7 +134,7 @@ h5>p {
 .card {
     background: white;
     border-radius: 10px;
-    
+    box-shadow: 5px 5px 5px #2dd4bf;
 }
 
 #announcements-card {
@@ -274,4 +278,41 @@ span {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+#trending-container::before {
+    position: absolute;
+    content: "Trending";
+    top: -30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.user-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user-wrapper img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 15px;
+    justify-self: flex-end;
+}
+
+.trending-username {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.trending-username span {
+    font-weight: normal;
 }
